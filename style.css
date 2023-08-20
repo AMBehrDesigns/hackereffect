@@ -1,0 +1,32 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #0536d5;
+    margin: 0rem;
+    overflow: hidden;
+}
+
+h1{
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(3rem, 10vw, 10rem);
+    color: #00a9a1;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+
+h1:hover{
+    cursor: crosshair;
+    background-color: #00a9a1;
+    color: #0536d5;
+}
+
+@media(max-width: 1250px){
+    h1{
+        display: block;
+        height: 100px;
+        width: 400px;
+        padding: 10px;
+        padding-left: 10px;
+    }
+}
